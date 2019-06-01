@@ -12,6 +12,8 @@
 		A11C23B922A2820000B92D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11C23B722A2820000B92D47 /* Main.storyboard */; };
 		A11C23BB22A2820100B92D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11C23BA22A2820100B92D47 /* Assets.xcassets */; };
 		A11C23BE22A2820100B92D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11C23BC22A2820100B92D47 /* LaunchScreen.storyboard */; };
+		A11C23C622A2A54B00B92D47 /* KindergartenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */; };
+		A11C23C822A2AF8B00B92D47 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C23C722A2AF8B00B92D47 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A11C23BA22A2820100B92D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11C23BD22A2820100B92D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A11C23BF22A2820100B92D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenTableViewController.swift; sourceTree = "<group>"; };
+		A11C23C722A2AF8B00B92D47 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A11C23BA22A2820100B92D47 /* Assets.xcassets */,
 				A11C23BC22A2820100B92D47 /* LaunchScreen.storyboard */,
 				A11C23BF22A2820100B92D47 /* Info.plist */,
+				A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */,
+				A11C23C722A2AF8B00B92D47 /* MapViewController.swift */,
 			);
 			path = SGP_TermProject;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				A11C23B622A2820000B92D47 /* ViewController.swift in Sources */,
 				A11C23B422A2820000B92D47 /* AppDelegate.swift in Sources */,
+				A11C23C622A2A54B00B92D47 /* KindergartenTableViewController.swift in Sources */,
+				A11C23C822A2AF8B00B92D47 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
