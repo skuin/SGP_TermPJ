@@ -14,6 +14,9 @@
 		A11C23BE22A2820100B92D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11C23BC22A2820100B92D47 /* LaunchScreen.storyboard */; };
 		A11C23C622A2A54B00B92D47 /* KindergartenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */; };
 		A11C23C822A2AF8B00B92D47 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C23C722A2AF8B00B92D47 /* MapViewController.swift */; };
+		A14B032722A3D55D004C7E98 /* Kidergarten.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B032622A3D55D004C7E98 /* Kidergarten.swift */; };
+		A14B032922A3DC94004C7E98 /* DetailKidergartenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */; };
+		A181135E22A45C84002A15C8 /* KiderImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A181135D22A45C84002A15C8 /* KiderImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A11C23BF22A2820100B92D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenTableViewController.swift; sourceTree = "<group>"; };
 		A11C23C722A2AF8B00B92D47 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A14B032622A3D55D004C7E98 /* Kidergarten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kidergarten.swift; sourceTree = "<group>"; };
+		A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKidergartenTableViewController.swift; sourceTree = "<group>"; };
+		A181135D22A45C84002A15C8 /* KiderImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KiderImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				A11C23BF22A2820100B92D47 /* Info.plist */,
 				A11C23C522A2A54B00B92D47 /* KindergartenTableViewController.swift */,
 				A11C23C722A2AF8B00B92D47 /* MapViewController.swift */,
+				A14B032622A3D55D004C7E98 /* Kidergarten.swift */,
+				A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */,
+				A181135D22A45C84002A15C8 /* KiderImage.jpg */,
 			);
 			path = SGP_TermProject;
 			sourceTree = "<group>";
@@ -131,6 +140,7 @@
 				A11C23BE22A2820100B92D47 /* LaunchScreen.storyboard in Resources */,
 				A11C23BB22A2820100B92D47 /* Assets.xcassets in Resources */,
 				A11C23B922A2820000B92D47 /* Main.storyboard in Resources */,
+				A181135E22A45C84002A15C8 /* KiderImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11C23B622A2820000B92D47 /* ViewController.swift in Sources */,
+				A14B032722A3D55D004C7E98 /* Kidergarten.swift in Sources */,
 				A11C23B422A2820000B92D47 /* AppDelegate.swift in Sources */,
+				A14B032922A3DC94004C7E98 /* DetailKidergartenTableViewController.swift in Sources */,
 				A11C23C622A2A54B00B92D47 /* KindergartenTableViewController.swift in Sources */,
 				A11C23C822A2AF8B00B92D47 /* MapViewController.swift in Sources */,
 			);

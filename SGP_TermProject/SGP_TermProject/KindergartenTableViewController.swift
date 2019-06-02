@@ -21,6 +21,12 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
     var chidName = NSMutableString()
     var chidAddr = NSMutableString()
     
+    var posx = NSMutableString()
+    var posy = NSMutableString()
+    
+    var kidername = ""
+    var kidername_utf8 = ""
+    
     func beginParsing()
     {
         posts = []
@@ -41,6 +47,10 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
             chidName = ""
             chidAddr = NSMutableString()
             chidAddr = ""
+            posx = NSMutableString()
+            posx = ""
+            posy = NSMutableString()
+            posy = ""
         }
     }
     
@@ -50,6 +60,10 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
             chidName.append(string)
         } else if element.isEqual(to: "chidAddr"){
             chidAddr.append(string)
+        } else if element.isEqual(to: "posx"){
+            posx.append(string)
+        } else if element.isEqual(to: "posy"){
+            posy.append(string)
         }
     }
     
@@ -59,8 +73,15 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
         {
             if !chidName.isEqual(nil){
                 elements.setObject(chidName, forKey: "chidName" as NSCopying)
-            } else if !chidAddr.isEqual(nil){
+            }
+            if !chidAddr.isEqual(nil){
                 elements.setObject(chidAddr, forKey: "chidAddr" as NSCopying)
+            }
+            if !posx.isEqual(nil){
+                elements.setObject(posx, forKey: "posx" as NSCopying)
+            }
+            if !posy.isEqual(nil){
+                elements.setObject(posy, forKey: "posy" as NSCopying)
             }
             
             posts.add(elements)
@@ -134,14 +155,30 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "segueToMapView"{
+            if let mapViewController = segue.destination as? MapViewController{
+                mapViewController.posts = posts
+            }
+        }
+        
+        if segue.identifier == "sequeToKiderDetail" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPath(for: cell)
+                kidername = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "chidName") as! NSString as String
+                // url 에서 한글을 쓸 수 있도록 코딩
+                kidername_utf8 = kidername.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+                // 선택한 row의 병원명을 추가하여 url 구성하고 넘겨줌
+                if let detailKiderTableViewController = segue.destination as? DetailKidergartenTableViewController {
+                    detailKiderTableViewController.url = url! + "&chidName=" + kidername_utf8
+                }
+            }
+        }
     }
-    */
+    
 
 }
