@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFZ-DN-dks">
-                                <rect key="frame" x="0.0" y="309" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="219" width="414" height="458"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8bC-Xf-vdC" id="8Pc-BJ-veC"/>
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="25.637181409295355"/>
+            <point key="canvasLocation" x="979.71014492753636" y="25.446428571428569"/>
         </scene>
         <!--어린이집 리스트-->
         <scene sceneID="Ku1-a1-VES">
@@ -88,7 +88,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="지도" id="NBc-ce-E1s">
                             <connections>
-                                <segue destination="Ura-sa-DHg" kind="show" identifier="sequeToMapView" id="Tno-nI-05K"/>
+                                <segue destination="Ura-sa-DHg" kind="show" identifier="segueToMapView" id="Tno-nI-05K"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -193,7 +193,7 @@
                                 <rect key="frame" x="34" y="266" width="349" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전주시 어린이집 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-zL-qcD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="경기도 어린이집 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-zL-qcD">
                                 <rect key="frame" x="113" y="191" width="190" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>

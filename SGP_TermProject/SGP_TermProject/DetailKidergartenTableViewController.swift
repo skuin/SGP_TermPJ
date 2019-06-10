@@ -19,8 +19,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     var parser = XMLParser()
     // feed 데이터를 저장하는 mutable array : 병원이 1개이므로 item이 1개
     // 11개 정보를 저장하는 array
-    let postname : [String] = ["이름", "유형", "전화번호", "주소"]
-    var posts : [String] = ["","","",""]
+    let postname : [String] = ["이름", "유형", "전화번호", "주소","위도","경도"]
+    var posts : [String] = ["","","","","",""]
     // dictionary 는 사용하지 않음
     // var elements = NSMutableDictionary()
     var element = NSString()
@@ -29,6 +29,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     var chidAddr = NSMutableString()
     var chidTel = NSMutableString()
     var chidGubun = NSMutableString()
+    var lat = NSMutableString()
+    var lon = NSMutableString()
     
     // parser 오브젝트 초기화하고 XMLParserDelegate로 설정하고 XML 파싱 시작
     func beginParsing()
@@ -43,9 +45,9 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
     {
         element = elementName as NSString
-        if (elementName as NSString).isEqual(to: "list")
+        if (elementName as NSString).isEqual(to: "row")
         {
-            posts = ["","","",""]
+            posts = ["","","","","",""]
             
             chidName = NSMutableString()
             chidName = ""
@@ -55,6 +57,10 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
             chidAddr = ""
             chidTel = NSMutableString()
             chidTel = ""
+            lat = NSMutableString()
+            lat = ""
+            lon = NSMutableString()
+            lon = ""
             
         }
     }
@@ -62,20 +68,24 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     // 병원 정보 11개를 완성 이름(yadmNm)과 주소(addr) 등
     func parser(_ parser: XMLParser, foundCharacters string: String)
     {
-        if element.isEqual(to: "chidName"){
+        if element.isEqual(to: "FACLT_NM"){
             chidName.append(string)
-        } else if element.isEqual(to: "chidGubun"){
+        } else if element.isEqual(to: "PLVTINST_DIV_NM"){
             chidGubun.append(string)
-        } else if element.isEqual(to: "chidAddr"){
+        } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
             chidAddr.append(string)
-        } else if element.isEqual(to: "chidTel"){
+        } else if element.isEqual(to: "TELNO"){
             chidTel.append(string)
+        } else if element.isEqual(to: "REFINE_WGS84_LAT"){
+            lat.append(string)
+        } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
+            lon.append(string)
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
     {
-        if (elementName as NSString).isEqual(to: "list")
+        if (elementName as NSString).isEqual(to: "row")
         {
             if !chidName.isEqual(nil){
                 posts[0] = chidName as String
@@ -88,6 +98,12 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
             }
             if !chidAddr.isEqual(nil){
                 posts[3] = chidAddr as String
+            }
+            if !lat.isEqual(nil){
+                posts[4] = lat as String
+            }
+            if !lon.isEqual(nil){
+                posts[5] = lon as String
             }
         }
     }
