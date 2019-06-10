@@ -67,7 +67,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let initialLocation = CLLocation(latitude: 37.2669636, longitude: 126.9922507)
         centerMapOnLocation(location: initialLocation)
         mapView.delegate = self
-        
         loadInitialData()
         mapView.addAnnotations(kidergartens)
     }

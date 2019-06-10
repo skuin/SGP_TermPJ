@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     var addrName : String = "%EC%88%98%EC%9B%90%EC%8B%9C"
     
-    var url : String = "https://openapi.gg.go.kr/ChildhouseKndrgrM?KEY=d652318810424c3188560a0e4b713aff&pIndex=1&pSize=1000&SIGUN_NM="
+    var url : String = "https://openapi.gg.go.kr/ChildhouseKndrgrM?KEY=d652318810424c3188560a0e4b713aff&pIndex=1&pSize=100&SIGUN_NM="
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -45,59 +45,59 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         } else if row == 3{
             addrName = "%EC%95%88%EC%96%91%EC%8B%9C" // 안양시
         } else if row == 4{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 안산시
+            addrName = "%EC%95%88%EC%82%B0%EC%8B%9C" // 안산시
         } else if row == 5{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 과천시
+            addrName = "%EA%B3%BC%EC%B2%9C%EC%8B%9C" // 과천시
         } else if row == 6{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 광명
+            addrName = "%EA%B4%91%EB%AA%85%EC%8B%9C" // 광명
         } else if row == 7{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 광주
+            addrName = "%EA%B4%91%EC%A3%BC%EC%8B%9C" // 광주
         } else if row == 8{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 군포
+            addrName = "%EA%B5%B0%ED%8F%AC%EC%8B%9C" // 군포
         } else if row == 9{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 부천
+            addrName = "%EB%B6%80%EC%B2%9C%EC%8B%9C" // 부천
         } else if row == 10{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 시흥
+            addrName = "%EC%8B%9C%ED%9D%A5%EC%8B%9C" // 시흥
         } else if row == 11{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 김포
+            addrName = "%EA%B9%80%ED%8F%AC%EC%8B%9C" // 김포
         } else if row == 12{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 안성
+            addrName = "%EC%95%88%EC%84%B1%EC%8B%9C" // 안성
         } else if row == 13{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 오산
+            addrName = "%EC%98%A4%EC%82%B0%EC%8B%9C" // 오산
         } else if row == 14{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 의왕
+            addrName = "%EC%9D%98%EC%99%95%EC%8B%9C" // 의왕
         } else if row == 15{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 이천
+            addrName = "%EC%9D%B4%EC%B2%9C%EC%8B%9C" // 이천
         } else if row == 16{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 평택
+            addrName = "%ED%8F%89%ED%83%9D%EC%8B%9C" // 평택
         } else if row == 17{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 하남
+            addrName = "%ED%95%98%EB%82%A8%EC%8B%9C" // 하남
         } else if row == 18{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 화성
+            addrName = "%ED%99%94%EC%84%B1%EC%8B%9C" // 화성
         } else if row == 19{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 여주
+            addrName = "%EC%97%AC%EC%A3%BC%EC%8B%9C" // 여주
         } else if row == 20{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 고양
+            addrName = "%EA%B3%A0%EC%96%91%EC%8B%9C" // 고양
         } else if row == 21{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 구리
+            addrName = "%EA%B5%AC%EB%A6%AC%EC%8B%9C" // 구리
         } else if row == 22{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 남양주
+            addrName = "%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C" // 남양주
         } else if row == 23{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 동두천
+            addrName = "%EB%8F%99%EB%91%90%EC%B2%9C%EC%8B%9C" // 동두천
         } else if row == 24{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 양주
+            addrName = "%EC%96%91%EC%A3%BC%EC%8B%9C" // 양주
         } else if row == 25{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 의정부
+            addrName = "%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C" // 의정부
         } else if row == 26{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 파주
+            addrName = "%ED%8C%8C%EC%A3%BC%EC%8B%9C" // 파주
         } else if row == 27{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 포천
+            addrName = "%ED%8F%AC%EC%B2%9C%EC%8B%9C" // 포천
         } else if row == 28{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 가천군
+            addrName = "%EA%B0%80%ED%8F%89%EA%B5%B0" // 가평군
         } else if row == 29{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 양평군
+            addrName = "%EC%96%91%ED%8F%89%EA%B5%B0" // 양평군
         } else if row == 30{
-            //addrName = "%EB%8D%95%EC%A7%84%EA%B5%AC" // 연천군
+            addrName = "%EC%97%B0%EC%B2%9C%EA%B5%B0" // 연천군
         }
     }
     

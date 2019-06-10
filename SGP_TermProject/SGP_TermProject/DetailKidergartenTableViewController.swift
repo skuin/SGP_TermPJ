@@ -19,8 +19,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     var parser = XMLParser()
     // feed 데이터를 저장하는 mutable array : 병원이 1개이므로 item이 1개
     // 11개 정보를 저장하는 array
-    let postname : [String] = ["이름", "유형", "전화번호", "주소","위도","경도"]
-    var posts : [String] = ["","","","","",""]
+    let postname : [String] = ["이름", "유형", "전화번호", "주소", "우편번호"]
+    var posts : [String] = ["","","","",""]
     // dictionary 는 사용하지 않음
     // var elements = NSMutableDictionary()
     var element = NSString()
@@ -29,8 +29,7 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     var chidAddr = NSMutableString()
     var chidTel = NSMutableString()
     var chidGubun = NSMutableString()
-    var lat = NSMutableString()
-    var lon = NSMutableString()
+    var REFINE_ZIP_CD = NSMutableString()
     
     // parser 오브젝트 초기화하고 XMLParserDelegate로 설정하고 XML 파싱 시작
     func beginParsing()
@@ -47,7 +46,7 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
         element = elementName as NSString
         if (elementName as NSString).isEqual(to: "row")
         {
-            posts = ["","","","","",""]
+            posts = ["","","","",""]
             
             chidName = NSMutableString()
             chidName = ""
@@ -57,10 +56,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
             chidAddr = ""
             chidTel = NSMutableString()
             chidTel = ""
-            lat = NSMutableString()
-            lat = ""
-            lon = NSMutableString()
-            lon = ""
+            REFINE_ZIP_CD = NSMutableString()
+            REFINE_ZIP_CD = ""
             
         }
     }
@@ -76,10 +73,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
             chidAddr.append(string)
         } else if element.isEqual(to: "TELNO"){
             chidTel.append(string)
-        } else if element.isEqual(to: "REFINE_WGS84_LAT"){
-            lat.append(string)
-        } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
-            lon.append(string)
+        } else if element.isEqual(to: "REFINE_ZIP_CD"){
+            REFINE_ZIP_CD.append(string)
         }
     }
     
@@ -99,11 +94,8 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
             if !chidAddr.isEqual(nil){
                 posts[3] = chidAddr as String
             }
-            if !lat.isEqual(nil){
-                posts[4] = lat as String
-            }
-            if !lon.isEqual(nil){
-                posts[5] = lon as String
+            if !REFINE_ZIP_CD.isEqual(nil){
+                posts[4] = REFINE_ZIP_CD as String
             }
         }
     }
