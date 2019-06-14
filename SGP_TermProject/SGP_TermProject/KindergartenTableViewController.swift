@@ -133,7 +133,6 @@ class KindergartenTableViewController: UITableViewController, XMLParserDelegate 
                 kidername = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FACLT_NM") as! NSString as String
                 // url 에서 한글을 쓸 수 있도록 코딩
                 kidername_utf8 = kidername.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-                // 선택한 row의 병원명을 추가하여 url 구성하고 넘겨줌
                 if let detailKiderTableViewController = segue.destination as? DetailKidergartenTableViewController {
                     detailKiderTableViewController.url = url! + "&FACLT_NM=" + kidername_utf8
                 }

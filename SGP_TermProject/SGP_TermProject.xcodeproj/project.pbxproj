@@ -17,6 +17,16 @@
 		A14B032722A3D55D004C7E98 /* Kidergarten.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B032622A3D55D004C7E98 /* Kidergarten.swift */; };
 		A14B032922A3DC94004C7E98 /* DetailKidergartenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */; };
 		A181135E22A45C84002A15C8 /* KiderImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A181135D22A45C84002A15C8 /* KiderImage.jpg */; };
+		A1A1684722B40FE500028C8C /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1684622B40FE500028C8C /* ChoiceViewController.swift */; };
+		A1A1684922B43C5400028C8C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1684822B43C5400028C8C /* SearchViewController.swift */; };
+		A1A1684B22B44EDF00028C8C /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1684A22B44EDF00028C8C /* SchoolViewController.swift */; };
+		A1A1684D22B4509A00028C8C /* SchoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1684C22B4509A00028C8C /* SchoolTableViewController.swift */; };
+		A1A1684F22B4517B00028C8C /* DetailSchoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1684E22B4517B00028C8C /* DetailSchoolTableViewController.swift */; };
+		A1A1685322B45F2C00028C8C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A1685222B45F2C00028C8C /* icon.png */; };
+		A1A1685522B45FFD00028C8C /* kid.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A1685422B45FFD00028C8C /* kid.png */; };
+		A1A1685722B462D800028C8C /* children.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A1685622B462D800028C8C /* children.png */; };
+		A1A1685A22B465EF00028C8C /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A1685822B465EF00028C8C /* stars.png */; };
+		A1A1685D22B466A400028C8C /* age.png in Resources */ = {isa = PBXBuildFile; fileRef = A1A1685C22B466A400028C8C /* age.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		A14B032622A3D55D004C7E98 /* Kidergarten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kidergarten.swift; sourceTree = "<group>"; };
 		A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKidergartenTableViewController.swift; sourceTree = "<group>"; };
 		A181135D22A45C84002A15C8 /* KiderImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KiderImage.jpg; sourceTree = "<group>"; };
+		A1A1684622B40FE500028C8C /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		A1A1684822B43C5400028C8C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A1A1684A22B44EDF00028C8C /* SchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewController.swift; sourceTree = "<group>"; };
+		A1A1684C22B4509A00028C8C /* SchoolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewController.swift; sourceTree = "<group>"; };
+		A1A1684E22B4517B00028C8C /* DetailSchoolTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolTableViewController.swift; sourceTree = "<group>"; };
+		A1A1685222B45F2C00028C8C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A1A1685422B45FFD00028C8C /* kid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kid.png; sourceTree = "<group>"; };
+		A1A1685622B462D800028C8C /* children.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = children.png; sourceTree = "<group>"; };
+		A1A1685822B465EF00028C8C /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		A1A1685C22B466A400028C8C /* age.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = age.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +94,17 @@
 				A11C23C722A2AF8B00B92D47 /* MapViewController.swift */,
 				A14B032622A3D55D004C7E98 /* Kidergarten.swift */,
 				A14B032822A3DC94004C7E98 /* DetailKidergartenTableViewController.swift */,
+				A1A1685622B462D800028C8C /* children.png */,
+				A1A1685C22B466A400028C8C /* age.png */,
+				A1A1685422B45FFD00028C8C /* kid.png */,
+				A1A1685822B465EF00028C8C /* stars.png */,
+				A1A1685222B45F2C00028C8C /* icon.png */,
 				A181135D22A45C84002A15C8 /* KiderImage.jpg */,
+				A1A1684622B40FE500028C8C /* ChoiceViewController.swift */,
+				A1A1684822B43C5400028C8C /* SearchViewController.swift */,
+				A1A1684A22B44EDF00028C8C /* SchoolViewController.swift */,
+				A1A1684C22B4509A00028C8C /* SchoolTableViewController.swift */,
+				A1A1684E22B4517B00028C8C /* DetailSchoolTableViewController.swift */,
 			);
 			path = SGP_TermProject;
 			sourceTree = "<group>";
@@ -137,8 +167,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A1685522B45FFD00028C8C /* kid.png in Resources */,
+				A1A1685A22B465EF00028C8C /* stars.png in Resources */,
 				A11C23BE22A2820100B92D47 /* LaunchScreen.storyboard in Resources */,
+				A1A1685D22B466A400028C8C /* age.png in Resources */,
+				A1A1685322B45F2C00028C8C /* icon.png in Resources */,
 				A11C23BB22A2820100B92D47 /* Assets.xcassets in Resources */,
+				A1A1685722B462D800028C8C /* children.png in Resources */,
 				A11C23B922A2820000B92D47 /* Main.storyboard in Resources */,
 				A181135E22A45C84002A15C8 /* KiderImage.jpg in Resources */,
 			);
@@ -153,10 +188,15 @@
 			files = (
 				A11C23B622A2820000B92D47 /* ViewController.swift in Sources */,
 				A14B032722A3D55D004C7E98 /* Kidergarten.swift in Sources */,
+				A1A1684922B43C5400028C8C /* SearchViewController.swift in Sources */,
 				A11C23B422A2820000B92D47 /* AppDelegate.swift in Sources */,
 				A14B032922A3DC94004C7E98 /* DetailKidergartenTableViewController.swift in Sources */,
 				A11C23C622A2A54B00B92D47 /* KindergartenTableViewController.swift in Sources */,
 				A11C23C822A2AF8B00B92D47 /* MapViewController.swift in Sources */,
+				A1A1684D22B4509A00028C8C /* SchoolTableViewController.swift in Sources */,
+				A1A1684F22B4517B00028C8C /* DetailSchoolTableViewController.swift in Sources */,
+				A1A1684722B40FE500028C8C /* ChoiceViewController.swift in Sources */,
+				A1A1684B22B44EDF00028C8C /* SchoolViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
