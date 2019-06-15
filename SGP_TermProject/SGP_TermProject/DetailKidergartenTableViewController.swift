@@ -31,7 +31,6 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
     var chidGubun = NSMutableString()
     var REFINE_ZIP_CD = NSMutableString()
     
-    // parser 오브젝트 초기화하고 XMLParserDelegate로 설정하고 XML 파싱 시작
     func beginParsing()
     {
         posts = []
@@ -62,7 +61,6 @@ class DetailKidergartenTableViewController: UITableViewController, XMLParserDele
         }
     }
     
-    // 병원 정보 11개를 완성 이름(yadmNm)과 주소(addr) 등
     func parser(_ parser: XMLParser, foundCharacters string: String)
     {
         if element.isEqual(to: "FACLT_NM"){
